@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+    
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+
+
+
+.main-header{
+    background-color: #EAC926;
+    position:relative;
+}
+
+
+  @media (max-width: 769px) {
+
+
+  .top-header{ 
+        display: flex;
+        flex-wrap: wrap; 
+        padding: 5%; 
+    }
+    
+    header ul li {
+        display: none;
+    }
+}
+
+ .comprame {
+    width: 100%;
+        text-align: center;
+        
+        margin-top: 20px;
+        font-size:17px;
+        
+    }
+
+.logo{
+    width: 200px;
+    animation: aumentar 2s linear 1 normal;
+
+}
+
+.busquedad {
+    position: relative;
+}
+
+@media (min-width: 769px) {
+
+    .top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+    .burger-menu {
+        display:none
+    }
+
+    
+}
+
+@keyframes aumentar {
+
+    0% {
+        transform: scale(0.5);
+    }
+    
+    100% {
+        transform: scale(1);
+    }
+}
+header div.logo{
+    padding: 15px;
+    
+
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+    flex-wrap: wrap;
+}
+
+    
+.barra{
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    font-size: 15px;
+    justify-content: space-between;
+
+    }
+
+.barra a{
+    text-decoration: none;
+    color: #000;
+    margin: 9px;
+}
+
+.barra ul{
+    display: flex;
+    padding: 5px;
+    list-style-type: none;
+    margin: 10px, -2px;
+
+}
+
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+    padding:2px
+}
+
+
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+
+
+
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+  
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 15px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+    
+
+}
+.discount{
+
+    text-align: right;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+    
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+main section div.products article i{
+    transition: transform 1s;
+}
+
+main section div.products article:hover i{
+    transform: rotate(-90deg);
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+main section article:hover .description{
+    display: block;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #0022AA;
+}
+
+@media (min-width: 361px){
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+  
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+  
+}
+
+.foot {
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: white;
+    text-align: center;
+    
+ }
+
+ .h{
+     font-size: 15px;
+ }
+
+@media (max-width: 361px) {
+
+    .foot {
+        
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background: white;
+        text-align: center;
+        font-size: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+     }
+    .busquedad {
+        
+        padding-left: 45px;
+        border-radius: 2px;
+    }
+    .busquedad input{
+
+        
+    background: white;
+    border: 6x solid transparent;
+    border-radius: 3px;
+    line-height: 28px;
+    width: 200px;
+    transition: 3.s ease all;
+    margin-top: 30px;
+    
+    }
+}
+
+@media (min-width: 769px) {
+
+     .button_header {
+
+        width: 50px;
+}
+    form.busquedad {
+        width: 100%;
+  padding-top: 15px;
+  border: none;
+  text-align: center;
+  color: #000;
+
+    }
+
+    form.busquedad input {
+
+        background: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    line-height: 25px;
+    transition: 3.s ease all;
+    padding: 0 50px 0 20px;
+    }
+
+    .logo {
+
+        width: 500px;
+    }
+
+    div.comprame {
+
+            margin-left: 120px;
+    }
+}
+   
+
+.shield {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+
+}
+.creditcard {
+
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.gift {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.formulario {
+    
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.register input {
+
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    line-height: 45px;
+    transition: 3.s ease all;
+    padding: 0 200px 0 10px;
+}
+
+.profile {
+
+    word-spacing: 12px;
+}
+
+.login {
+
+    position:relative;
+    left: 25px;
+
+}
+.login input {
+   
+    position: relative;
+    
+    display: flex;
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    line-height: 45px;
+    transition: 3.s ease all;
+    padding: 0px 400px 0 10px;
+    margin-top: 30px;
+   
+    
+    
+}
+
+button{
+
+    height: 30px;
+    width: 55px;
+}
+
+.login button {
+    position: relative;
+    left: 25px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: rgb(0, 47, 255);
+    color: white;
+    text-align: center;
+    width: 600px;
+    border-radius: 10px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: white;
+    font-size: 20 px;
+}
